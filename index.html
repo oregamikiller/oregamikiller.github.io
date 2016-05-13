@@ -5,11 +5,13 @@
     <title></title>
     <style>
         @keyframes typing {
-            from { width: 0 }
+            from { width: 0; }
         }
         h1 {
-            width: 7.7em; /* Width of text */
-            animation: typing 8s;
+            width: 15ch; /* Width of text */
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 6s steps(15);
         }
     </style>
 </head>
