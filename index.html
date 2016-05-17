@@ -13,11 +13,31 @@
             white-space: nowrap;
             animation: typing 6s steps(15);
         }
+
+        @keyframes bg {
+            50% { background: #655; }
+        }
+        .pie::before {
+            content: '';
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background-color: inherit;
+            transform-origin: left;
+            animation: spin 3s linear infinite,
+            bg 6s step-end infinite;
+        }
+        ▶
     </style>
 </head>
 <body>
 Start
 
 <h1>CSS is awesome!</h1>
+
+
+<div class="pie"></div>
+
 </body>
 </html>
